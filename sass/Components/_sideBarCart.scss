@@ -1,0 +1,228 @@
+/*? CART SIDEBAR */
+.sidebar-cart {
+  position: fixed;
+  width: 300px;
+  background-color: red;
+  height: 100%;
+  z-index: 90000000;
+  right: -350px;
+  top: 0;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease;
+}
+
+.sidebar-cart .cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $main-color-pink;
+  color: $white;
+}
+
+.sidebar-cart .close-cart {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* Scrollbar Styles for the Cart Content */
+.sidebar-cart .cart-content::-webkit-scrollbar {
+  width: 15px; /* Adjust width of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+.sidebar-cart .cart-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light color to blend with the sidebar background */
+  border-radius: 10px;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.sidebar-cart .cart-content::-webkit-scrollbar-thumb {
+  //background-color: #ff4d4d; /* Main color of the sidebar for the scrollbar handle */
+  background-color: $main-color-pink;
+  border-radius: 10px; /* Rounded corners for the scrollbar handle */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Handle on hover */
+.sidebar-cart .cart-content::-webkit-scrollbar-thumb:hover {
+  //background-color: #e43a3a;
+  /* Slightly darker shade for better visibility on hover */
+  background-color: blue;
+}
+
+.sidebar-cart .cart-content {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar-cart.open {
+  right: 0px; /* Show the sidebar */
+}
+/* Start OF Products Cart  */
+.product-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.product-text {
+  flex-grow: 1;
+  // font-size: 18px;
+  font-weight: 900;
+  color: #333;
+}
+
+.product-price {
+  margin: 0 5px;
+}
+
+.product-icon {
+  color: #ff4d4d;
+  cursor: pointer;
+}
+
+.product-icon i {
+  font-size: 20px;
+}
+
+.product-cart:hover {
+  background-color: #f1f1f1;
+}
+
+.product-cart i:hover {
+  color: #ff1a1a;
+}
+
+/* Cart Bottom Section */
+.cart-bottom {
+  border-top: 1px solid #ddd;
+  // flex-basis: 20%;
+  padding: 20px;
+  background-color: #f8f8f8; /* Softer background to contrast with white */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow to give depth */
+  border-radius: 0 0 10px 10px; /* Rounded corners for a softer look */
+}
+
+/* Note Section */
+.note {
+  font-size: 18px; /* Slightly smaller for a cleaner look */
+  color: #444; /* Darker color for better readability */
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.note:hover {
+  color: $main-color-pink;
+}
+
+/* Taxes Section */
+.taxes {
+  font-size: 16px;
+  color: #666; /* Softer color for secondary text */
+  margin-bottom: 10px;
+}
+
+/* Subtotal Section */
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px; /* Slightly larger and more prominent */
+  font-weight: bold;
+  color: #333; /* Darker color for emphasis */
+  margin-bottom: 10px;
+}
+
+/* Checkout Button */
+.checkout button {
+  width: 100%;
+  padding: 15px 10px;
+  background-color: $main-color-pink; /* Strong color to catch attention */
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+/* Button Hover */
+.checkout button:hover {
+  background-color: blue; /* Slightly darker on hover */
+}
+
+/* End OF Product Cart */
+
+/*? CART SIDEBAR */
+
+/* Order note div - initially hidden */
+.order-note {
+  display: none; /*Hidden by default*/
+  position: relative;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Close button */
+.close-note {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-note:hover {
+  color: #ff4d4d;
+}
+
+/* Textarea */
+.order-note textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* Save button */
+.save-note-btn {
+  padding: 10px 15px;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.save-note-btn:hover {
+  background-color: #444;
+}

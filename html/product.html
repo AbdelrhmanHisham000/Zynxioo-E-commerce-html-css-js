@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zynxioo</title>
+    <!--* JS -->
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/dropMenu.js"></script>
+    <script defer src="../js/cartSidebar.js"></script>
+    <script defer src="../js/searchInput.js"></script>
+    <script defer src="../js/addOrderNote.js"></script>
+
+    <!--* JS -->
+   
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+  
+    <!-- Font Aswesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Demo styles -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><p>Zynxioo</p></a>
+        </div>
+
+        <nav class="navigation">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#" class="pages" style="position: relative"
+              >Pages <i class="fa-solid fa-angle-down"></i>
+              <div class="arrow-text">
+                <span class="link" data-href="about.html">About</span>
+                <span class="link" data-href="testimonials.html"
+                  >Testimonials</span
+                >
+              </div>
+            </a>
+            <a href="product.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-cart-shopping cart-shopping">
+              <p class="product-no">0</p>
+            </i>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <form
+                class="searchform"
+                onsubmit="event.preventDefault();"
+                role="search"
+                dir="ltr"
+              >
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--* Start OF Cart -->
+    <div class="sidebar-cart">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart">&times;</span>
+      </div>
+      <div class="cart-content"></div>
+      <div class="cart-bottom">
+        <div class="note" id="addNoteBtn">
+          <p>Add Order Note</p>
+        </div>
+        <!-- Hidden Order Note Div -->
+  <div class="order-note" id="orderNote">
+    <button class="close-note" id="closeNote">&times;</button>
+    <textarea id="noteText" placeholder="Enter your note here..."></textarea>
+    <button class="save-note-btn" id="saveNoteBtn">Save</button>
+  </div>
+        <div class="taxes">
+          <p>Shipping & taxes calculated at checkout</p>
+        </div>
+          <div class="subtotal">
+            <p>Subtotal</p>
+            <span class="subtotal-price">0.00$</span>
+          </div>
+          <div class="checkout">
+            <button>CHECKOUT </button>
+          </div>
+      </div>
+    </div>
+    <!--* End OF Cart -->
+
+    <!-- Swiper -->
+    <section class="swip">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-img first">
+              <img src="../images/banner-1.jpg" alt="" />
+              <!-- <div class="banner-content">
+                <p class="banner-subtitle">Trending item</p>
+
+                <div class="banner-title">
+                  <h2>
+                    Women's <br />
+                    latest <br />
+                    fashion sale
+                  </h2>
+                </div>
+
+                <p class="banner-text">starting at $ <b>20</b>.00</p>
+
+                <a href="#" class="banner-btn">Shop now</a>
+              </div>
+            --></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img second">
+              <img src="../images/banner-2.jpg" alt="" />
+              <!-- <div class="banner-content">
+                <p class="banner-subtitle">Trending accessories</p>
+
+                <div class="banner-title">
+                  <h2>
+                    Modern <br />
+                    sunglasses
+                  </h2>
+                </div>
+
+                <p class="banner-text">starting at $ <b>15</b>.00</p>
+
+                <a href="#" class="banner-btn">Shop now</a>
+              </div> -->
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <img src="../images/banner-3.jpg" alt="" />
+              <!-- <div class="banner-content">
+                <p class="banner-subtitle">Sale Offer</p>
+
+                <div class="banner-title">
+                  <h2>New fashion</h2>
+                  <h2>summer sale</h2>
+                </div>
+
+                <p class="banner-text">starting at $ <b>29</b>.99</p>
+
+                <a href="#" class="banner-btn">Shop now</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+
+    <!--? Start of Products -->
+    <section class="products">
+      <div class="title">
+        <p>Our <span>products</span></p>
+      </div>
+      <div class="filter">
+        <div class="filter_item">
+          <!-- <h3>Categorie</h3> -->
+          <div class="content">
+            <div class="item first">
+              <span>Shirts</span>
+              <input type="checkbox" />
+            </div>
+
+            <div class="item">
+              <span>Shoes</span>
+              <input type="checkbox" />
+            </div>
+
+            <div class="item">
+              <span>Trousers</span>
+              <input type="checkbox" />
+            </div>
+
+            <div class="item">
+              <span>Women's Dresses</span>
+              <input type="checkbox" />
+            </div>
+
+            <div class="item">
+              <span>Sneakers</span>
+              <input type="checkbox" />
+            </div>
+            <div class="item">
+              <span>Jackets</span>
+              <input type="checkbox" />
+            </div>
+            <div class="item">
+              <span>Watches</span>
+              <input type="checkbox" />
+            </div>
+            <div class="item">
+              <span>Hats</span>
+              <input type="checkbox" />
+            </div>
+            <div class="item">
+              <span>Pijama</span>
+              <input type="checkbox" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- <div class="card">
+          <div class="pro-img"></div>
+          <div class="pro-info"></div>
+        </div> -->
+      </div>
+      <div class="pagination">
+        <span class="btn_page prev"
+          ><i class="fa-solid fa-backward-step"></i
+        ></span>
+         <span class="num_page first-page active">1</span>
+         <span class="num_page second-page">2</span>
+        <span class="num_page third-page">3</span>
+        <span class="btn_page next"
+          ><i class="fa-solid fa-forward-step"></i
+        ></span>
+      </div>
+    </section>
+    <!--? End of products -->
+
+    <!--? Start OF Subscribe -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe-text">
+          <p class="s-title">Subscribe To Get Discount Offers</p>
+          <p class="ss-title">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis molestiae enim sunt ipsum ex fuga?
+          </p>
+        </div>
+        <div class="inputt">
+          <input type="email" placeholder="Enter your email" />
+        </div>
+      </div>
+
+      <div class="btn"><button>Subscribe</button></div>
+    </section>
+    <!--? End OF Subscribe -->
+
+     <!-- start of info -->
+     <div class="infoo" id="info">
+      <div class="container">
+        <div class="one-col">
+          <div class="info-contact">
+            <h4>Address</h4>
+
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>location</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span> Call +01 1234567890 </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span> demo@gmail.com </span>
+            </a>
+          </div>
+
+          <div class="info_social">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="info_link_box">
+          <h4>Links</h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Home
+            </a>
+            <a class="" href="about.html">
+              <img src="images/nav-bullet.png" alt="" />
+              About
+            </a>
+            <a class="" href="product.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Products
+            </a>
+            <a class="" href="blog.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Blog
+            </a>
+            <a class="" href="testimonials.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Testimonials
+            </a>
+
+            <a class="" href="contact.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p>
+            necessary, making this the first true generator on the Internet. It
+            uses a dictionary of over 200 Latin words, combined with a handful
+          </p>
+        </div>
+
+        <div class="info-subscribe">
+          <h4>Subscribe</h4>
+          <div class="field">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of info -->
+    <!--? Start OF Copyrights  -->
+    <div class="cpy_">
+      <p>Created BY Abdelrhman Hisham</p>
+     
+    </div>
+    <!--? End OF Copyrights  -->
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../js/swiper.js"></script>
+  </body>
+</html>

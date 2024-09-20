@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  //  border: 1px solid red; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Start OF global */
+.title {
+  margin-bottom: 60px;
+}
+.title p {
+  font-size: 45px;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+.title p::before {
+  content: "";
+  width: 85px;
+  height: 5px;
+  background-color: $main-color-pink;
+  top: 135%;
+  left: 50%;
+  transform: translate(-50%, -135%);
+  position: absolute;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  vertical-align: -0.1875em;
+}
+
+section {
+  padding: $section-padding;
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+a,
+i,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*End OF global */

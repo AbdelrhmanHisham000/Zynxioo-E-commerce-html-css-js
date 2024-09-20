@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zynxioo</title>
+    <!--* JS -->
+    <script type="module" src="../js/script.js"></script>
+    <script defer src="../js/searchInput.js"></script>
+    <script defer src="../js/dropMenu.js"></script>
+    <script defer src="../js/cartSidebar.js"></script>
+    <script defer src="../js/addOrderNote.js"></script>
+
+    <!--* JS -->
+   
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Font Aswesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><p>Zynxioo</p></a>
+        </div>
+
+        <nav class="navigation">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#" class="pages" style="position: relative"
+              >Pages <i class="fa-solid fa-angle-down"></i>
+              <div class="arrow-text">
+                <span class="link" data-href="about.html">About</span>
+                <span class="link" data-href="testimonials.html"
+                  >Testimonials</span
+                >
+              </div>
+            </a>
+            <a href="product.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-cart-shopping cart-shopping">
+              <p class="product-no">0</p>
+            </i>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <form
+                class="searchform"
+                onsubmit="event.preventDefault();"
+                role="search"
+                dir="ltr"
+              >
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+   <!--* Start OF Cart -->
+   <div class="sidebar-cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <span class="close-cart">&times;</span>
+    </div>
+    <div class="cart-content"></div>
+    <div class="cart-bottom">
+      <div class="note" id="addNoteBtn">
+        <p>Add Order Note</p>
+      </div>
+      <!-- Hidden Order Note Div -->
+<div class="order-note" id="orderNote">
+  <button class="close-note" id="closeNote">&times;</button>
+  <textarea id="noteText" placeholder="Enter your note here..."></textarea>
+  <button class="save-note-btn" id="saveNoteBtn">Save</button>
+</div>
+      <div class="taxes">
+        <p>Shipping & taxes calculated at checkout</p>
+      </div>
+        <div class="subtotal">
+          <p>Subtotal</p>
+          <span class="subtotal-price">0.00$</span>
+        </div>
+        <div class="checkout">
+          <button>CHECKOUT </button>
+        </div>
+    </div>
+  </div>
+  <!--* End OF Cart -->
+    <section class="contact-container">
+      <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class="contact-info">
+          <p>
+            We'd love to hear from you! Whether you have a question, feedback,
+            or just want to say hello, feel free to reach out to us using the
+            form below or through our contact details.
+          </p>
+          <p>Email: support@Zynxioo.com</p>
+          <p>Phone: +1 (800) 123-4567</p>
+          <p>Address: 123 Fashion Street, New York, NY 10001</p>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!--? Start OF Subscribe -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe-text">
+          <p class="s-title">Subscribe To Get Discount Offers</p>
+          <p class="ss-title">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis molestiae enim sunt ipsum ex fuga?
+          </p>
+        </div>
+        <div class="inputt">
+          <input type="email" placeholder="Enter your email" />
+        </div>
+      </div>
+
+      <div class="btn"><button>Subscribe</button></div>
+    </section>
+    <!--? End OF Subscribe -->
+
+    <!-- start of info -->
+    <div class="infoo" id="info">
+      <div class="container">
+        <div class="one-col">
+          <div class="info-contact">
+            <h4>Address</h4>
+
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>location</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span> Call +01 1234567890 </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span> demo@gmail.com </span>
+            </a>
+          </div>
+
+          <div class="info_social">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="info_link_box">
+          <h4>Links</h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Home
+            </a>
+            <a class="" href="about.html">
+              <img src="images/nav-bullet.png" alt="" />
+              About
+            </a>
+            <a class="" href="product.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Products
+            </a>
+            <a class="" href="blog.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Blog
+            </a>
+            <a class="" href="testimonials.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Testimonials
+            </a>
+
+            <a class="" href="contact.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p>
+            necessary, making this the first true generator on the Internet. It
+            uses a dictionary of over 200 Latin words, combined with a handful
+          </p>
+        </div>
+
+        <div class="info-subscribe">
+          <h4>Subscribe</h4>
+          <div class="field">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of info -->
+
+
+    <!--? Start OF Copyrights  -->
+    <div class="cpy_">
+      <p>Created BY Abdelrhman Hisham</p>
+      
+    </div>
+    <!--? End OF Copyrights  -->
+
+    
+
+  </body>
+</html>

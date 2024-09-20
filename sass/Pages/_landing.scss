@@ -1,0 +1,122 @@
+/* Default styles for small screens */
+.main {
+  background: url(../images/slider-bg.jpg) no-repeat center center;
+  background-size: cover;
+  // min-height: 100vh;
+  height: 550px;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  
+}
+
+/* For medium screens (e.g., tablets) */
+// @media (min-width: 576px) {
+//   .main {
+//     /* Adjustments for medium-sized screens if needed */
+//     /* Example: */
+//     // background-position: right top;
+//   }
+// }
+@media (min-width: 300px) and (max-width:991px){
+  .main{
+    object-position: right;
+    background-position: right center;
+
+  }
+}
+/* For large screens (e.g., desktops) */
+@media (min-width: 992px) and (min-height:2000px) {
+  .main {
+    /* Adjustments for large screens if needed */
+    /* Example: */
+    background-position: center center;
+    // background-size: cover;
+  //  width: 1500px;
+  }
+}
+
+/* For extra-large screens (e.g., large desktops or TVs) */
+@media (min-width: 1200px) {
+  .main {
+    /* Adjustments for extra-large screens if needed */
+    /* Example: */
+    background-position: bottom bottom;
+  }
+}
+
+/* Styles for screens between 586px and 900px */
+
+
+
+.main .container {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+  .main .container {
+    // top: 49%;
+    top: 63%;
+        /* right: 17px; */
+        left: 60%;
+        /* overflow: hidden; */
+        width: 65%;
+  }
+}
+
+.main .container h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: $main-color-pink;
+  line-height: 70px;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .main .container h1 {
+    font-size: 2rem;
+        line-height: 40px;
+        margin-bottom: 20px;
+  }
+}
+
+// .main .container h1 span {
+//   // color: $dark-blue;
+//   // color: white;
+// }
+.main .container p {
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  width: 512px;
+  font-size: 20px;
+  // color: #828181;
+  color: black;
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+  .main .container p {
+    width: 100%;
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main .container p {
+    width: 476px;
+  }
+}
+.slider-buttons {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.slider-buttons li {
+  width: 20px;
+  height: 20px;
+  font-size: 45px;
+  color: $white;
+}
+.slider-buttons li:nth-child(2) {
+  color: $main-color-pink;
+}
+/*? End OF Landing */

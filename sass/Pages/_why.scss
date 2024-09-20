@@ -1,0 +1,41 @@
+/*? Start OF why  */
+.why .cards {
+  /* margin-top: 60px; */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Reduce min width */
+  grid-gap: 20px;
+  text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 334px) {
+  .why .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.why .card {
+  background-color: $dark-blue;
+  width: 100%;
+  padding: 60px 20px; /* Reduced padding */
+  color: $white;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.why .card > * {
+  margin-bottom: 10px;
+}
+
+.why .card i {
+  font-size: 45px;
+  color: $white;
+}
+
+.why .card h3 {
+  font-size: 22px;
+}
+/*? end OF why  */

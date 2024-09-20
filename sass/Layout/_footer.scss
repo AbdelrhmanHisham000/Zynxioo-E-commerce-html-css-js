@@ -1,0 +1,237 @@
+footer {
+  background-color: #f8f8f8;
+  padding: 90px 0 70px;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  footer .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+footer .container > * {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .head {
+  margin-bottom: 20px;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  footer .container .head {
+    margin-bottom: 5px;
+  }
+}
+
+footer .container a {
+  font-size: 18px;
+  color: #000;
+}
+
+footer .Menu a:hover {
+  color: $main-color-pink;
+  transition: 0.3s;
+}
+
+.famms span {
+  font-size: 18px;
+  color: $black;
+  font-weight: 600;
+}
+
+.newsletter p {
+  font-size: 18px;
+}
+
+.newsletter .field {
+  width: 260px;
+  position: relative;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 18px 105px 18px 20px;
+  height: 50px;
+}
+
+.newsletter button {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: $main-color-pink;
+  color: $white;
+  font-weight: bold;
+}
+
+.cpy_ {
+  background: #222;
+  text-align: center;
+  padding: 20px 0;
+  color: $white;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cpy span {
+  color: red;
+}
+
+/* start of info */
+.infoo {
+  background-color: #f8f8f8;
+  color: black;
+  padding: $section-padding;
+}
+
+.infoo h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.infoo a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+.infoo .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .infoo .container {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+.infoo .info-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .infoo .info-contact {
+    margin-bottom: 15px;
+  }
+}
+.infoo .info-contact a:hover {
+  color: black;
+}
+
+.infoo .info_social {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .infoo .info_social {
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+}
+.infoo .info_social a {
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.infoo .info_social i {
+  font-size: 25px;
+}
+.infoo .info_social i:hover {
+  color: black;
+}
+.infoo .one-col {
+  flex-basis: 25%;
+}
+
+.infoo .info_link_box {
+  flex-basis: 25%;
+}
+.infoo .info_links {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .infoo .info_links a:not(:last-child) {
+    margin-right: 3px;
+  }
+  .infoo .info_links img {
+    display: none;
+  }
+}
+.infoo .info_links .active {
+  color: $main-color-pink;
+}
+.infoo .info_links a:hover {
+  color: blue;
+}
+
+.infoo .info_links img {
+  margin-right: 6px;
+}
+.infoo .info_detail {
+  flex-basis: 25%;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .infoo .info_detail p {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .infoo .info_detail {
+    flex-basis: 25%;
+    margin-right: 0px;
+  }
+}
+.infoo .info-subscribe {
+  flex-basis: 25%;
+}
+
+.info-subscribe p {
+  font-size: 18px;
+}
+
+.info-subscribe .field {
+  width: 260px;
+  position: relative;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .info-subscribe .field {
+
+    left: 46%;
+    transform: translateX(-46%);
+  }
+}
+.info-subscribe input {
+  width: 100%;
+  padding: 18px 105px 18px 20px;
+  height: 50px;
+}
+
+.info-subscribe button {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: $main-color-pink;
+  color: $white;
+  font-weight: bold;
+}
+
+/* end of info */

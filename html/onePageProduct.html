@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zynxioo</title>
+    <!--*JS -->
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/dropMenu.js"></script>
+    <script defer src="../js/cartSidebar.js"></script>
+    <script defer src="../js/searchInput.js"></script>
+    <script defer src="../js/addOrderNote.js"></script>
+
+    <!--*JS -->
+    
+    <!--*CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+   
+    <!--*Font Aswesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><p>Zynxioo</p></a>
+        </div>
+
+        <nav class="navigation">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#" class="pages" style="position: relative"
+              >Pages <i class="fa-solid fa-angle-down"></i>
+              <div class="arrow-text">
+                <span class="link" data-href="about.html">About</span>
+                <span class="link" data-href="testimonials.html"
+                  >Testimonials</span
+                >
+              </div>
+            </a>
+            <a href="product.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-cart-shopping cart-shopping">
+              <p class="product-no">0</p>
+            </i>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <form
+                class="searchform"
+                onsubmit="event.preventDefault();"
+                role="search"
+                dir="ltr"
+              >
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--* Start OF Cart -->
+    <div class="sidebar-cart">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart">&times;</span>
+      </div>
+      <div class="cart-content"></div>
+      <div class="cart-bottom">
+        <div class="note" id="addNoteBtn">
+          <p>Add Order Note</p>
+        </div>
+        <!-- Hidden Order Note Div -->
+  <div class="order-note" id="orderNote">
+    <button class="close-note" id="closeNote">&times;</button>
+    <textarea id="noteText" placeholder="Enter your note here..."></textarea>
+    <button class="save-note-btn" id="saveNoteBtn">Save</button>
+  </div>
+        <div class="taxes">
+          <p>Shipping & taxes calculated at checkout</p>
+        </div>
+          <div class="subtotal">
+            <p>Subtotal</p>
+            <span class="subtotal-price">0.00$</span>
+          </div>
+          <div class="checkout">
+            <button>CHECKOUT </button>
+          </div>
+      </div>
+    </div>
+    <!--* End OF Cart -->
+    <!-- <a href="./"></a> -->
+    <!--* Start OF onePageProduct -->
+    <div class="item_detail">
+      <div class="container">
+        <!-- <div class="img_item">
+                <div class="big_img  ">
+                    <img id="bigImage" src="../html/products2/jacket-2.jpg" alt="">
+                </div>
+                 <div class="sm_imgs">
+                    <img onclick="changeItemImage(this.src)" src="./img/product/product-1.jpg" alt="">
+                    <img onclick="changeItemImage(this.src)" src="./img/product/product1.jpg" alt="">
+                    <img onclick="changeItemImage(this.src)" src="./img/product/product-2.jpg" alt="">
+                    <img onclick="changeItemImage(this.src)" src="./img/product/product2.jpg" alt="">
+                </div> 
+            </div>
+            <div class="details_item">
+                <h1 class="name">Original Mobile Android Dual SIM Smart Phone G3</h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="price">
+                    <p><span>$120.00</span></p>
+                   
+                  </div> 
+                  <h5> Availability: <span>In Stock</span></h5>
+                  <h5>SKU: <span>Lorem ipsum dolor sit amet.</span></h5>
+                  <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Consectetur eligendi deserunt blanditiis magni quaerat provident 
+                     veritatis facilis, saepe facere quia nulla enim, eum error expedita 
+                     reprehenderit libero suscipit maxime, cum sunt odio quasi. Veniam 
+                     blanditiis nisi reiciendis quia error numquam natus. Voluptatibus?</p>
+                    <h4>Original Mobile Android Dual SIM Smart Phone G3</h4>
+                    <button> Add to cart     <i class="fa-solid fa-cart-plus"></i></button>
+                    <div class="icons">
+                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span><i class="fa-solid fa-sliders"></i></span>
+                        <span><i class=" fa-solid fa-print"></i></span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                       
+                    </div>
+            </div>
+                 -->
+      </div>
+    </div>
+
+    <!--* End OF onePageProduct -->
+
+    <!--* Start of Products -->
+    <section class="products">
+      <div class="title">
+        <p>Other <span>Products</span></p>
+      </div>
+      <div class="container">
+        <!--*<div class="card">
+          <div class="pro-img"></div>
+          <div class="pro-info"></div>
+        </div> -->
+      </div>
+      <div class="btn">
+        <a href="product.html"> <button>View All products</button></a>
+      </div>
+    </section>
+    <!--* End of products -->
+
+     <!-- start of info -->
+     <div class="infoo" id="info">
+      <div class="container">
+        <div class="one-col">
+          <div class="info-contact">
+            <h4>Address</h4>
+
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>location</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span> Call +01 1234567890 </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span> demo@gmail.com </span>
+            </a>
+          </div>
+
+          <div class="info_social">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="info_link_box">
+          <h4>Links</h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Home
+            </a>
+            <a class="" href="about.html">
+              <img src="images/nav-bullet.png" alt="" />
+              About
+            </a>
+            <a class="" href="product.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Products
+            </a>
+            <a class="" href="blog.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Blog
+            </a>
+            <a class="" href="testimonials.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Testimonials
+            </a>
+
+            <a class="" href="contact.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p>
+            necessary, making this the first true generator on the Internet. It
+            uses a dictionary of over 200 Latin words, combined with a handful
+          </p>
+        </div>
+
+        <div class="info-subscribe">
+          <h4>Subscribe</h4>
+          <div class="field">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of info -->
+
+
+    <!--* Start OF Copyrights  -->
+    <div class="cpy_">
+      <p>Created BY Abdelrhman Hisham</p>
+     
+    </div>
+    <!--* End OF Copyrights  -->
+  </body>
+</html>

@@ -1,0 +1,162 @@
+/* item_detail page  */
+
+.item_detail {
+  background: #f7f8f9;
+  padding: 40px 0;
+}
+
+.item_detail .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_detail .img_item {
+  width: 39%;
+}
+
+.item_detail .img_item .big_img img {
+   width: 100%;
+}
+
+.item_detail .img_item .sm_imgs {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.item_detail .img_item .sm_imgs img {
+  width: 22%;
+}
+
+.item_detail .details_item {
+  width: 58%;
+}
+
+.item_detail .details_item h1 {
+  margin-bottom: 15px;
+}
+
+.item_detail .details_item h5 {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.item_detail .details_item h5 span {
+  color: $main-color-pink;
+  font-size: 18px;
+}
+
+.item_detail .details_item .price {
+  justify-content: left;
+  margin: 15px 0;
+  gap: 20px;
+}
+
+.item_detail .details_item .price p {
+  font-size: 20px;
+}
+
+.item_detail .details_item .text_p {
+  line-height: 1.2;
+}
+
+.item_detail .details_item h4 {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.item_detail .details_item button {
+  border: none;
+  outline: none;
+  background: $main-color-pink;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item_detail .details_item button:hover {
+  scale: 1.1;
+}
+.item_detail .details_item button i {
+  color: #fff;
+}
+
+.item_detail .details_item .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.item_detail .details_item .icons i {
+  width: 40px;
+  height: 40px;
+  background: #efeeee;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.item_detail .details_item .icons i:hover {
+  background: $main-color-pink;
+  color:#fff;
+}
+
+.stars {
+  margin: 15px 0;
+}
+
+.stars i {
+  color: $main-color-pink;
+}
+
+
+/* Rescponseve detail page */
+
+@media (max-width: 1000px) {
+  .item_detail .container {
+    flex-direction: column;
+  }
+
+  .item_detail .img_item {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .item_detail .details_item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .item_detail .img_item {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .item_detail .details_item h1 {
+    font-size: 15px;
+  }
+
+  .item_detail .details_item .text_p {
+    font-size: 13px;
+  }
+
+  .item_detail .details_item h4 {
+    font-size: 15px;
+  }
+
+  .item_detail .details_item button {
+    font-size: 13px;
+  }
+}

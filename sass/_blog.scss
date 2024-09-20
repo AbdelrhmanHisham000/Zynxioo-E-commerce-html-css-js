@@ -1,0 +1,70 @@
+/* Blog section styling */
+.blog {
+  background-color: #f9f9f9; /* Light gray background for the section */
+  padding: 50px 20px; /* Generous padding around the section */
+  font-family: "Arial", sans-serif; /* Default font for text */
+  color: #333; /* Dark gray color for the text */
+  line-height: 1.6; /* Improved readability */
+}
+
+.blog h1 {
+  font-size: 2.5em; /* Large font size for the main heading */
+  color: #2c3e50; /* Dark blue color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.blog h2 {
+  font-size: 2em; /* Slightly smaller font size for subheadings */
+  color: #34495e; /* Darker shade of blue for subheadings */
+  margin-top: 30px; /* Space above subheadings */
+  margin-bottom: 15px; /* Space below subheadings */
+}
+
+.blog p {
+  margin: 15px 0; /* Space above and below paragraphs */
+  font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+.blog ul {
+  margin: 20px 0; /* Space above and below the list */
+  padding-left: 20px; /* Indentation for list items */
+  list-style-type: disc; /* Bullet points style */
+}
+
+.blog ul li {
+  margin-bottom: 10px; /* Space below each list item */
+  font-size: 1.1em; /* Slightly larger font size for list items */
+}
+
+.blog .highlight {
+  color: #e74c3c; /* Red color to highlight important text */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+.blog .cta {
+  margin-top: 30px; /* Space above the call-to-action paragraph */
+  font-size: 1.2em; /* Slightly larger font size for emphasis */
+  color: #2980b9; /* Blue color for the call-to-action text */
+  font-weight: bold; /* Bold text for emphasis */
+  text-align: center;
+}
+
+/* Additional responsive styling */
+@media (max-width: 768px) {
+  .blog {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .blog h1 {
+    font-size: 2em; /* Adjust heading size for smaller screens */
+  }
+
+  .blog h2 {
+    font-size: 1.75em; /* Adjust subheading size for smaller screens */
+  }
+
+  .blog p,
+  .blog ul li {
+    font-size: 1em; /* Adjust text size for smaller screens */
+  }
+}

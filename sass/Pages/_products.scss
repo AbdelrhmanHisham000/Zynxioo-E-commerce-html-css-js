@@ -1,0 +1,128 @@
+/*? start OF Products  */
+.products .title span {
+  color: $main-color-pink;
+}
+
+.products .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  position: relative;
+}
+@media (min-width: 300px) and (max-width: 334px) {
+  .products .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.products .container .card {
+  margin-top: 25px;
+  background-color: #f7f8f9;
+  padding: 30px 10px;
+  box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.2);
+  border: solid #fff 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.products .container .pro-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 190px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+.products .container .pro-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.products .container .pro-info h3 {
+  font-size: 18px;
+}
+
+.products .container .pro-info p {
+  color: $dark-blue;
+  font-weight: 600;
+}
+
+.products .btn button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+/*! OVERLAY  */
+.card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translateY(380px); /* Initial position off-screen */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* z-index: -10; */
+  transition: transform 0.4s ease; /*Smooth transition*/
+}
+.card .overlay .overlay-btns {
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card .overlay .overlay-btns button {
+  padding: 15px 8px;
+  border-radius: 30px;
+  width: 165px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card .overlay .overlay-btns button:first-child {
+  background-color: $main-color-pink;
+  border: 1px solid $main-color-pink;
+  color: $white;
+  transition: 0.3s;
+  
+}
+.card .overlay .overlay-btns button:nth-child(2) {
+  background-color: $black;
+  border: 1px solid $black;
+  color: $white;
+  transition: 0.3s;
+}
+/*! OVERLAY  */
+
+/*! HOVER  */
+.card .overlay .overlay-btns button:first-child:hover {
+  background-color: transparent;
+  border: 1px solid $main-color-pink;
+  color: $main-color-pink;
+}
+.card .overlay .overlay-btns button:nth-child(2):hover {
+  background-color: transparent;
+  border: 1px solid $black;
+  color: $black;
+}
+
+.products .container .card:hover .overlay {
+  transform: translateY(0px); /* Slide up the overlay */
+}
+
+.products .container .card:hover .pro-img img {
+  transform: scale(1.099); /* Scale the image */
+}
+/*! HOVER  */
+
+/*? End OF Products  */

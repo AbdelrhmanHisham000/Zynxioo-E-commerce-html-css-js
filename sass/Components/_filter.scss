@@ -1,0 +1,105 @@
+/* General Filter Styles */
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.filter .text {
+  margin-right: 20px;
+}
+
+.filter_items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter_item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.filter_item h3,
+.filter_item h4 {
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.item input {
+  margin-left: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .filter {
+    flex-direction: column; /* Stack the filter sections vertically */
+    align-items: flex-start;
+  }
+
+  .filter .text {
+    margin-bottom: 15px;
+  }
+
+  .filter_items {
+    flex-direction: column; /* Stack categories on top of each other */
+    width: 100%;
+  }
+
+  .filter_item {
+    width: 100%; /* Make each filter item take full width */
+    margin-bottom: 15px;
+  }
+
+  .content {
+    flex-wrap: wrap; /* Wrap items within each category to avoid overflow */
+  }
+
+  .item {
+    margin-right: 10px; /* Reduce spacing between items */
+    margin-bottom: 10px; /* Add space below each item */
+  }
+
+  .filter_item h3,
+  .filter_item h4 {
+    margin-bottom: 5px; /* Add some space below the heading */
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+  .filter_item {
+    margin-bottom: 10px;
+  }
+
+  .item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+
+  .filter_item h3,
+  .filter_item h4 {
+    font-size: 16px; /* Reduce heading size slightly */
+  }
+
+  .filter .text h1 {
+    font-size: 18px; /* Reduce main heading size */
+  }
+}
+
+/* fitler */

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zynxioo</title>
+    <!--*JS -->
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/dropMenu.js"></script>
+    <script defer src="../js/slider.js"></script>
+    <script defer src="../js/cartSidebar.js"></script>
+    <script defer src="../js/searchInput.js"></script>
+    <script defer src="../js/reavealSection.js"></script>
+    <script defer src="../js/addOrderNote.js"></script>
+    <!--*JS -->
+
+    
+    <!--*CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!--*Font Aswesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--* Start OF Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><p>Zynxioo</p></a>
+        </div>
+
+        <nav class="navigation">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+          <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#" class="pages" style="position: relative"
+              >Pages <i class="fa-solid fa-angle-down"></i>
+              <div class="arrow-text">
+                <span class="link" data-href="about.html">About</span>
+                <span class="link" data-href="testimonials.html"
+                  >Testimonials</span
+                >
+              </div>
+            </a>
+            <a href="product.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-cart-shopping cart-shopping">
+              <p class="product-no">0</p>
+            </i>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <form
+                class="searchform"
+                onsubmit="event.preventDefault();"
+                role="search"
+                dir="ltr"
+              >
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--* End OF Header -->
+
+    <!--* Start OF Cart -->
+    <div class="sidebar-cart">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart">&times;</span>
+      </div>
+      <div class="cart-content"></div>
+      <div class="cart-bottom">
+        <div class="note" id="addNoteBtn">
+          <p>Add Order Note</p>
+        </div>
+        <!-- Hidden Order Note Div -->
+        <div class="order-note" id="orderNote">
+          <button class="close-note" id="closeNote">&times;</button>
+          <textarea
+            id="noteText"
+            placeholder="Enter your note here..."
+          ></textarea>
+          <button class="save-note-btn" id="saveNoteBtn">Save</button>
+        </div>
+        <div class="taxes">
+          <p>Shipping & taxes calculated at checkout</p>
+        </div>
+        <div class="subtotal">
+          <p>Subtotal</p>
+          <span class="subtotal-price">0.00$</span>
+        </div>
+        <div class="checkout">
+          <button>CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+    <!--* End OF Cart -->
+
+    <!--* start of main -->
+    <section class="main">
+      <div class="container">
+        <h1>
+          Sale 20% Off <br />
+          <span>On Everything </span>
+        </h1>
+        <p>
+          Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam
+          fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat
+          molestias, veniam, vel architecto veritatis delectus repellat modi
+          impedit sequi.
+        </p>
+        <div class="btn">
+          <button>Shop Now</button>
+        </div>
+        <ul class="slider-buttons">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <!--* end of main -->
+
+    <!--*start of why -->
+    <section class="why">
+      <div class="title">
+        <p>Why Shop With Us</p>
+      </div>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Fast Delivery</h3>
+            <p>variations of passages of Lorem Ipsum available</p>
+          </div>
+          <div class="card">
+            <i class="fa-brands fa-free-code-camp"></i>
+            <h3>Free Shiping</h3>
+            <p>variations of passages of Lorem Ipsum available</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-medal"></i>
+            <h3>Best Quality</h3>
+            <p>variations of passages of Lorem Ipsum available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--*end of why -->
+
+    <!--*start of arrivals -->
+    <section class="arrivals">
+      <div class="container">
+        <div class="arr-img">
+          <img src="../images/arrival-bg.png" alt="" />
+          <div class="arr-info">
+            <h1>#NewArrivals</h1>
+            <p>
+              Vitae fugiat laboriosam officia perferendis provident aliquid
+              voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic?
+              Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique
+              ex unde!
+            </p>
+            <div class="btn">
+              <button class="arrivals-btn">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--*end of arrivals -->
+
+    <!--* Start of Products -->
+    <section class="products">
+      <div class="title">
+        <p>Best <span>sellers</span></p>
+      </div>
+      <div class="container">
+        <!--*<div class="card">
+          <div class="pro-img"></div>
+          <div class="pro-info"></div>
+        </div> -->
+      </div>
+      <div class="btn">
+        <a href="product.html"> <button>View All products</button></a>
+      </div>
+    </section>
+    <!--* End of products -->
+
+    <!--* Start OF Subscribe -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe-text">
+          <p class="s-title">Subscribe To Get Discount Offers</p>
+          <p class="ss-title">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis molestiae enim sunt ipsum ex fuga?
+          </p>
+        </div>
+        <div class="inputt">
+          <input type="email" placeholder="Enter your email" />
+        </div>
+      </div>
+
+      <div class="btn"><button>Subscribe</button></div>
+    </section>
+    <!--* End OF Subscribe -->
+
+    <!--* Start OF Testimonials  -->
+    <section class="testimonials">
+      <div class="title">
+        <p>Customer's Testimonial</p>
+      </div>
+      <div class="container">
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonials-container">
+              <div class="testi-img">
+                <img src="../images/client.jpg" alt="Client Image" />
+              </div>
+              <div class="testi-text">
+                <div class="info">
+                  <h5>Anna Trevor</h5>
+                  <p>Customer</p>
+                </div>
+                <div class="content">
+                  <p>
+                    "Will the most worthy of criticism be repelled by some
+                    error? And let there be minds from which one criticizes,
+                    and, when you see, We are leading him to work with his
+                    duties For a wise man accuses the way of pleasures! Let him
+                    ask."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonials-container">
+              <div class="testi-img">
+                <img src="../images/client2.jpeg" alt="Client Image" />
+              </div>
+              <div class="testi-text">
+                <div class="info">
+                  <h5>David Lee</h5>
+                  <p>Customer</p>
+                </div>
+                <div class="content">
+                  <p>
+                    "I had a wonderful experience shopping here. The quality
+                    exceeded my expectations and the delivery was fast and
+                    hassle-free. I highly recommend this service to anyone
+                    looking for top-quality products and great customer care."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonials-container">
+              <div class="testi-img">
+                <img src="../images/client3.jpeg" alt="Client Image" />
+              </div>
+              <div class="testi-text">
+                <div class="info">
+                  <h5>Hector Rose</h5>
+                  <p>Customer</p>
+                </div>
+                <div class="content">
+                  <p>
+                    "The customer service was exceptional! From start to finish,
+                    the process was smooth and the staff was incredibly helpful.
+                    I’m thrilled with the product I received and will definitely
+                    be coming back for more."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left-arrow">
+            <i style="color: white" class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="right-arrow">
+            <i style="color: white" class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--* End OF Testimonials  -->
+
+    <!-- start of info -->
+    <div class="infoo" id="info">
+      <div class="container">
+        <div class="one-col">
+          <div class="info-contact">
+            <h4>Address</h4>
+
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>location</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span> Call +01 1234567890 </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span> demo@gmail.com </span>
+            </a>
+          </div>
+
+          <div class="info_social">
+            <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+            <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="info_link_box">
+          <h4>Links</h4>
+          <div class="info_links">
+            <a class="active" href="index.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Home
+            </a>
+            <a class="" href="about.html">
+              <img src="images/nav-bullet.png" alt="" />
+              About
+            </a>
+            <a class="" href="product.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Products
+            </a>
+            <a class="" href="blog.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Blog
+            </a>
+            <a class="" href="testimonials.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Testimonials
+            </a>
+
+            <a class="" href="contact.html">
+              <img src="images/nav-bullet.png" alt="" />
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p>
+            necessary, making this the first true generator on the Internet. It
+            uses a dictionary of over 200 Latin words, combined with a handful
+          </p>
+        </div>
+
+        <div class="info-subscribe">
+          <h4>Subscribe</h4>
+          <div class="field">
+            <input type="email" placeholder="Enter Your Email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of info -->
+
+    <!--* Start OF Copyrights  -->
+    <div class="cpy_">
+      <p>Created BY Abdelrhman Hisham</p>
+    </div>
+    <!--* End OF Copyrights  -->
+  </body>
+</html>

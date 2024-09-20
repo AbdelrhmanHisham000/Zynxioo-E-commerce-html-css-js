@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1031,
+    "img": "./Products/p1.png",
+    "name": "Men's Shirt",
+    "price": "75"
+  },
+  {
+    "id": 1032,
+    "img": "./Products/p3.png",
+    "name": "Women's Dress",
+    "price": "210"
+  },
+  {
+    "id": 1033,
+    "img": "./Products/p2.png",
+    "name": "Black Men's Shirt",
+    "price": "85"
+  },
+  {
+    "id": 1034,
+    "img": "./Products/p8.png",
+    "name": "Men's Shirt",
+    "price": "70"
+  },
+  {
+    "id": 1035,
+    "img": "./Products/p9.png",
+    "name": "Blue Men's Shirt",
+    "price": "75"
+  },
+  {
+    "id": 1036,
+    "img": "./Products/p10.png",
+    "name": "Green Men's Shirt",
+    "price": "80"
+  },
+  {
+    "id": 1037,
+    "img": "./Products/p12.png",
+    "name": "Women's Dress",
+    "price": "85"
+  },
+  {
+    "id": 1038,
+    "img": "./Products/p11.png",
+    "name": "Men's Shirt",
+    "price": "70"
+  },
+  {
+    "id": 1039,
+    "img": "./Products/p6.png",
+    "name": "Women's Dress",
+    "price": "100"
+  },
+  {
+    "id": 1040,
+    "img": "./Products/p4.png",
+    "name": "Women's Dress",
+    "price": "115"
+  },
+  {
+    "id": 1041,
+    "img": "./Products/p5.png",
+    "name": "Women's Dress",
+    "price": "105"
+  },
+  {
+    "id": 1042,
+    "img": "./Products/p7.png",
+    "name": "Women's Dress",
+    "price": "175"
+  }
+]

@@ -1,0 +1,42 @@
+/* Start OF Testimonials */
+/*! content */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testi-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testi-text .info {
+  margin-bottom: 5px;
+}
+.testi-text .info h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.testi-text .info p {
+  font-size: 18px;
+  color: #999998;
+}
+
+.testi-text .content {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.testi-text .content {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/*! Content */

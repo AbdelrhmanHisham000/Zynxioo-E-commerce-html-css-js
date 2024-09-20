@@ -1,0 +1,175 @@
+/* General Header Styling */
+header {
+  padding: 16px 0;
+  background-color: $white;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+}
+
+header.height {
+  height: 420px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 250px;
+}
+
+/* Navigation Styling */
+.navigation .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .navigation .fa-bars {
+    display: block;
+  }
+}
+.navigation .links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .navigation .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: $white;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .navigation .links.active {
+    display: flex;
+  }
+}
+
+.links a,
+i {
+  text-decoration: none;
+  color: #131313;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.links > *:hover {
+  color: $main-color-pink;
+}
+.links > .search-bar i:hover {
+  color: $main-color-pink;
+}
+.links a:first-child {
+  color: $main-color-pink;
+}
+.links a:nth-child(2) span {
+  color: $black;
+  transition: 0.3s;
+}
+.links a:nth-child(2) span:hover {
+  color: $main-color-pink;
+}
+
+.navigation a:nth-child(2) i {
+  font-size: 0.85em;
+  margin-left: 2px;
+}
+
+.arrow-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 2000;
+  background-color: $white;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: normal;
+  gap: 20px;
+  border: 2px solid $black;
+  top: 34px;
+  left: -14px;
+  display: none;
+}
+.arrow-text.active {
+  display: flex;
+}
+.arrow-text::after {
+  content: "";
+  position: inherit;
+  border: 3px solid $black;
+  top: 4px;
+  height: 92px;
+  right: -7px;
+}
+.arrow-text::before {
+  content: "";
+  position: inherit;
+  border: 3px solid $black;
+  width: 100%;
+  bottom: -8px;
+  left: 1px;
+}
+
+/* End OF Header  */
+
+// Cart Shopping
+.cart-shopping {
+  position: relative;
+}
+
+.cart-shopping .product-no {
+  position: absolute;
+  top: -12px;
+  right: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: $main-color-pink;
+}
+
+// search bar
+.search-bar {
+  position: relative;
+}
+
+form {
+  border-radius: 10px;
+  margin-right: 27px;
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: -283px;
+  z-index: 100;
+}
+
+form.active {
+  display: block;
+}
+#search {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+// search bar
+
+.logo p {
+  font-size: 40px;
+  font-weight: bold;
+  color: $main-color-pink;
+}
+
+
